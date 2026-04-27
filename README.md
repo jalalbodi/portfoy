@@ -8,7 +8,7 @@ Student number: 23080410313
 
 ## Live and Repository
 
-- Live URL: `https://your-domain.example`
+- Live URL: `(https://jalalbodi.github.io/portfoy/)`
 - Repository URL: `(https://github.com/jalalbodi/portfoy.git)`
 - CI badge:
   ```md
