@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f9f8;
+  --foreground: #151918;
+  --surface: #ffffff;
+  --surface-muted: #eef3f0;
+  --border: #d8e0dc;
+  --accent: #256f5b;
+  --accent-strong: #174839;
+  --accent-warm: #b45f36;
 }
 
 @theme inline {
@@ -14,13 +22,100 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #101412;
+    --foreground: #eef5f1;
+    --surface: #151b18;
+    --surface-muted: #1f2823;
+    --border: #334239;
+    --accent: #65c6a6;
+    --accent-strong: #a6f0d4;
+    --accent-warm: #e19a72;
   }
+}
+
+html[data-theme="dark"] {
+  --background: #101412;
+  --foreground: #eef5f1;
+  --surface: #151b18;
+  --surface-muted: #1f2823;
+  --border: #334239;
+  --accent: #65c6a6;
+  --accent-strong: #a6f0d4;
+  --accent-warm: #e19a72;
+}
+
+html[data-theme="light"] {
+  --background: #f7f9f8;
+  --foreground: #151918;
+  --surface: #ffffff;
+  --surface-muted: #eef3f0;
+  --border: #d8e0dc;
+  --accent: #256f5b;
+  --accent-strong: #174839;
+  --accent-warm: #b45f36;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 28%, transparent);
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.section-shell {
+  margin-inline: auto;
+  width: min(1120px, calc(100% - 32px));
+}
+
+.prose-blog {
+  color: color-mix(in srgb, var(--foreground) 88%, transparent);
+}
+
+.prose-blog h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 750;
+  color: var(--foreground);
+}
+
+.prose-blog h3 {
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.prose-blog p,
+.prose-blog li {
+  line-height: 1.8;
+}
+
+.prose-blog ul {
+  margin: 1rem 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.prose-blog code {
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  padding: 0.1rem 0.35rem;
+  background: var(--surface-muted);
+}
+
+.prose-blog a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
