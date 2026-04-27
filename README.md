@@ -10,11 +10,11 @@ Student number: 23080410313
 ## Live and Repository
 
 - Live URL: `https://your-domain.example`
-- Repository URL: `https://github.com/<owner>/<repo>`
+- Repository URL: `(https://github.com/jalalbodi/portfoy.git)`
 - CI badge: replace `<owner>/<repo>` after pushing to GitHub:
   ```md
-  [![CI](https://github.com/<owner>/<repo>/actions/workflows/ci.yml/badge.svg)](https://github.com/<owner>/<repo>/actions/workflows/ci.yml)
-  [![Security](https://github.com/<owner>/<repo>/actions/workflows/security.yml/badge.svg)](https://github.com/<owner>/<repo>/actions/workflows/security.yml)
+  [![CI](https://github.com/jalalbodi/portfoy.git/actions/workflows/ci.yml/badge.svg)](https://github.com/jalalbodi/portfoy.git/actions/workflows/ci.yml)
+  [![Security](https://github.com/jalalbodi/portfoy.git/actions/workflows/security.yml/badge.svg)](https://github.com/jalalbodi/portfoy.git/actions/workflows/security.yml)
   ```
 
 ## Tech Stack
