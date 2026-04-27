@@ -11,7 +11,7 @@ Student number: 23080410313
 
 - Live URL: `https://your-domain.example`
 - Repository URL: `(https://github.com/jalalbodi/portfoy.git)`
-- CI badge: replace `<owner>/<repo>` after pushing to GitHub:
+- CI badge:
   ```md
   [![CI](https://github.com/jalalbodi/portfoy.git/actions/workflows/ci.yml/badge.svg)](https://github.com/jalalbodi/portfoy.git/actions/workflows/ci.yml)
   [![Security](https://github.com/jalalbodi/portfoy.git/actions/workflows/security.yml/badge.svg)](https://github.com/jalalbodi/portfoy.git/actions/workflows/security.yml)
