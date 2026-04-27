@@ -5,7 +5,6 @@ Production-ready personal portfolio for a computer engineering student. The site
 Student: Abdulrahman Ali  
 Student number: 23080410313
 
-> Replace the sample profile in `data/profile.ts` before publishing.
 
 ## Live and Repository
 
